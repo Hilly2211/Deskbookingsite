@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat Booking Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Seat Booking System</h1>
+    <label for="booking-date">Select Date: </label>
+    <input type="date" id="booking-date" value="" onchange="updateSeatsView()">
+    
+    <div id="seating-areas">
+        <div class="floor" id="ground-floor">
+            <h2>Ground Floor</h2>
+            <div class="seating-row">
+                <div class="seat" data-seat-number="1">Seat 1</div>
+                <div class="seat" data-seat-number="2">Seat 2</div>
+            </div>
+            <div class="seating-row">
+                <div class="seat" data-seat-number="3">Seat 3</div>
+                <div class="seat" data-seat-number="4">Seat 4</div>
+                <div class="seat" data-seat-number="5">Seat 5</div>
+            </div>
+            <div class="seating-row">
+                <div class="seat" data-seat-number="6">Seat 6</div>
+                <div class="seat" data-seat-number="7">Seat 7</div>
+                <div class="seat" data-seat-number="8">Seat 8</div>
+            </div>
+            <div class="seating-row">
+                <div class="seat" data-seat-number="9">Seat 9</div>
+                <div class="seat" data-seat-number="10">Seat 10</div>
+            </div>
+        </div>
+        <div class="floor" id="first-floor">
+            <h2>First Floor</h2>
+            <div class="seating-row">
+                <div class="seat" data-seat-number="11">Seat 11</div>
+                <div class="seat" data-seat-number="12">Seat 12</div>
+            </div>
+            <div class="seating-row">
+                <div class="seat" data-seat-number="13">Seat 13</div>
+                <div class="seat" data-seat-number="14">Seat 14</div>
+                <div class="seat" data-seat-number="15">Seat 15</div>
+            </div>
+            <div class="seating-row">
+                <div class="seat" data-seat-number="16">Seat 16</div>
+                <div class="seat" data-seat-number="17">Seat 17</div>
+            </div>
+            <div class="seating-row">
+                <div class="seat" data-seat-number="18">Seat 18</div>
+                <div class="seat" data-seat-number="19">Seat 19</div>
+            </div>
+        </div>
+        <div class="floor" id="second-floor">
+            <h2>Second Floor</h2>
+            <div class="seating-row">
+                <div class="seat" data-seat-number="20">Seat 20</div>
+                <div class="seat" data-seat-number="21">Seat 21</div>
+            </div>
+            <div class="seating-row">
+                <div class="seat" data-seat-number="22">Seat 22</div>
+                <div class="seat" data-seat-number="23">Seat 23</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Modal -->
+    <div id="booking-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Book Seat</h2>
+            <input type="text" id="name-input" placeholder="Enter your name"><br><br>
+            <button id="confirm-button">Confirm</button>
+            <button id="cancel-button">Cancel</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
